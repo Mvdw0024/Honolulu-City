@@ -192,6 +192,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wd8-u4-pKo">
                                 <rect key="frame" x="0.0" y="86" width="414" height="725"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9dh-o9-ICZ" id="8IQ-e0-hjE"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -200,7 +203,7 @@
                     <tabBarItem key="tabBarItem" title="Map" image="map.fill" catalog="system" selectedImage="map.fill" id="LKJ-94-LfW"/>
                     <navigationItem key="navigationItem" id="aez-fN-oK8"/>
                     <connections>
-                        <outlet property="mapView" destination="Wd8-u4-pKo" id="Kwv-Kt-eF0"/>
+                        <outlet property="mapView" destination="Wd8-u4-pKo" id="El8-QG-F7S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2TQ-u2-z8F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

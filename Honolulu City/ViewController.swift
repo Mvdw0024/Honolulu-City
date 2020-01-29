@@ -9,21 +9,26 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController{
+class ViewController: UIViewController, MKMapViewDelegate{
+    
     
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager.init()
-    var data = DAO.sharedInstance.getAllArtWorks()
-    var items:[POI]
-   
+    var artworks = [POI]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.requestWhenInUseAuthorization()
-        mapView.addAnnotations(data)
         
     }
     
-    
+    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+        artworks = DAO.sharedInstance.getAllArtWorks()
+        locationManager.requestWhenInUseAuthorization()
+        
+        let visRegion = MKCoordinateRegion.init(center: CLLocationCoordinate2D(latitude: 21.3972222, longitude: -157.97333333), latitudinalMeters: 60000, longitudinalMeters: 60000)
+        mapView.region = visRegion
+        mapView.addAnnotations(artworks)
+    }
 }
 
