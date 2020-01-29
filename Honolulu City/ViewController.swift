@@ -7,14 +7,23 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController{
+    
+    @IBOutlet weak var mapView: MKMapView!
+    let locationManager = CLLocationManager.init()
+    var data = DAO.sharedInstance.getAllArtWorks()
+    var items:[POI]
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        locationManager.requestWhenInUseAuthorization()
+        mapView.addAnnotations(data)
+        
     }
-
-
+    
+    
 }
 
