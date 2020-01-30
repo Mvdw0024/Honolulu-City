@@ -12,17 +12,18 @@
 		4956A21D23E19F22007D472E /* ArtWorkTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956A21C23E19F22007D472E /* ArtWorkTableTableViewController.swift */; };
 		4956A21F23E1B85F007D472E /* ArtWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956A21E23E1B85F007D472E /* ArtWorkTableViewCell.swift */; };
 		4956A22123E2C8AA007D472E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956A22023E2C8AA007D472E /* DetailsViewController.swift */; };
-		4956A23023E2EDC5007D472E /* 881-hawaii-round-trip-honolulu-PRIDE_AMER7HNLOGGITOKOANWKHNL_R_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22523E2EDC5007D472E /* 881-hawaii-round-trip-honolulu-PRIDE_AMER7HNLOGGITOKOANWKHNL_R_0.jpg */; };
-		4956A23123E2EDC5007D472E /* waikiki_surf-statue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22623E2EDC5007D472E /* waikiki_surf-statue.jpg */; };
-		4956A23223E2EDC5007D472E /* 23Hours-Honolulu2-mobileMasterAt3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22723E2EDC5007D472E /* 23Hours-Honolulu2-mobileMasterAt3x.jpg */; };
-		4956A23323E2EDC5007D472E /* AliiBeachfrontBoutique_546x601.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22823E2EDC5007D472E /* AliiBeachfrontBoutique_546x601.jpg */; };
-		4956A23423E2EDC5007D472E /* Unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22923E2EDC5007D472E /* Unknown.jpg */; };
-		4956A23523E2EDC5007D472E /* Oahu Honolulu View from Tantalus lookout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22A23E2EDC5007D472E /* Oahu Honolulu View from Tantalus lookout.jpg */; };
-		4956A23623E2EDC5007D472E /* 220418387.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22B23E2EDC5007D472E /* 220418387.jpg */; };
-		4956A23723E2EDC5007D472E /* diamond-head-honolulu-hawaii.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22C23E2EDC5007D472E /* diamond-head-honolulu-hawaii.jpg */; };
-		4956A23823E2EDC5007D472E /* honolulu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22D23E2EDC5007D472E /* honolulu.jpg */; };
-		4956A23923E2EDC5007D472E /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22E23E2EDC5007D472E /* unnamed.png */; };
-		4956A23A23E2EDC5007D472E /* diamond-head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22F23E2EDC5007D472E /* diamond-head.jpg */; };
+		4956A23023E2EDC5007D472E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22523E2EDC5007D472E /* 1.jpg */; };
+		4956A23123E2EDC5007D472E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22623E2EDC5007D472E /* 2.jpg */; };
+		4956A23223E2EDC5007D472E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22723E2EDC5007D472E /* 3.jpg */; };
+		4956A23323E2EDC5007D472E /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22823E2EDC5007D472E /* 4.jpg */; };
+		4956A23423E2EDC5007D472E /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22923E2EDC5007D472E /* 5.jpg */; };
+		4956A23523E2EDC5007D472E /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22A23E2EDC5007D472E /* 6.jpg */; };
+		4956A23623E2EDC5007D472E /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22B23E2EDC5007D472E /* 7.jpg */; };
+		4956A23723E2EDC5007D472E /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22C23E2EDC5007D472E /* 8.jpg */; };
+		4956A23823E2EDC5007D472E /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22D23E2EDC5007D472E /* 9.jpg */; };
+		4956A23923E2EDC5007D472E /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22E23E2EDC5007D472E /* 9.png */; };
+		4956A23A23E2EDC5007D472E /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4956A22F23E2EDC5007D472E /* 11.jpg */; };
+		4956A24123E32FE6007D472E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956A24023E32FE6007D472E /* AboutViewController.swift */; };
 		49E01F1923E179FC0089E62D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E01F1823E179FC0089E62D /* AppDelegate.swift */; };
 		49E01F1B23E179FC0089E62D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E01F1A23E179FC0089E62D /* SceneDelegate.swift */; };
 		49E01F1D23E179FC0089E62D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E01F1C23E179FC0089E62D /* ViewController.swift */; };
@@ -39,18 +40,19 @@
 		4956A21C23E19F22007D472E /* ArtWorkTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkTableTableViewController.swift; sourceTree = "<group>"; };
 		4956A21E23E1B85F007D472E /* ArtWorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkTableViewCell.swift; sourceTree = "<group>"; };
 		4956A22023E2C8AA007D472E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		4956A22523E2EDC5007D472E /* 881-hawaii-round-trip-honolulu-PRIDE_AMER7HNLOGGITOKOANWKHNL_R_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "881-hawaii-round-trip-honolulu-PRIDE_AMER7HNLOGGITOKOANWKHNL_R_0.jpg"; sourceTree = "<group>"; };
-		4956A22623E2EDC5007D472E /* waikiki_surf-statue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "waikiki_surf-statue.jpg"; sourceTree = "<group>"; };
-		4956A22723E2EDC5007D472E /* 23Hours-Honolulu2-mobileMasterAt3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "23Hours-Honolulu2-mobileMasterAt3x.jpg"; sourceTree = "<group>"; };
-		4956A22823E2EDC5007D472E /* AliiBeachfrontBoutique_546x601.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AliiBeachfrontBoutique_546x601.jpg; sourceTree = "<group>"; };
-		4956A22923E2EDC5007D472E /* Unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpg; sourceTree = "<group>"; };
-		4956A22A23E2EDC5007D472E /* Oahu Honolulu View from Tantalus lookout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Oahu Honolulu View from Tantalus lookout.jpg"; sourceTree = "<group>"; };
-		4956A22B23E2EDC5007D472E /* 220418387.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 220418387.jpg; sourceTree = "<group>"; };
-		4956A22C23E2EDC5007D472E /* diamond-head-honolulu-hawaii.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "diamond-head-honolulu-hawaii.jpg"; sourceTree = "<group>"; };
-		4956A22D23E2EDC5007D472E /* honolulu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = honolulu.jpg; sourceTree = "<group>"; };
-		4956A22E23E2EDC5007D472E /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unnamed.png; sourceTree = "<group>"; };
-		4956A22F23E2EDC5007D472E /* diamond-head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "diamond-head.jpg"; sourceTree = "<group>"; };
+		4956A22523E2EDC5007D472E /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		4956A22623E2EDC5007D472E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		4956A22723E2EDC5007D472E /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		4956A22823E2EDC5007D472E /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		4956A22923E2EDC5007D472E /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		4956A22A23E2EDC5007D472E /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		4956A22B23E2EDC5007D472E /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		4956A22C23E2EDC5007D472E /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		4956A22D23E2EDC5007D472E /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		4956A22E23E2EDC5007D472E /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		4956A22F23E2EDC5007D472E /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
 		4956A23B23E2F260007D472E /* us-hi-ho.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "us-hi-ho.gif"; sourceTree = "<group>"; };
+		4956A24023E32FE6007D472E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		49E01F1523E179FC0089E62D /* Honolulu City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Honolulu City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E01F1823E179FC0089E62D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49E01F1A23E179FC0089E62D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,17 +81,17 @@
 			isa = PBXGroup;
 			children = (
 				4956A23B23E2F260007D472E /* us-hi-ho.gif */,
-				4956A22523E2EDC5007D472E /* 881-hawaii-round-trip-honolulu-PRIDE_AMER7HNLOGGITOKOANWKHNL_R_0.jpg */,
-				4956A22623E2EDC5007D472E /* waikiki_surf-statue.jpg */,
-				4956A22723E2EDC5007D472E /* 23Hours-Honolulu2-mobileMasterAt3x.jpg */,
-				4956A22823E2EDC5007D472E /* AliiBeachfrontBoutique_546x601.jpg */,
-				4956A22923E2EDC5007D472E /* Unknown.jpg */,
-				4956A22A23E2EDC5007D472E /* Oahu Honolulu View from Tantalus lookout.jpg */,
-				4956A22B23E2EDC5007D472E /* 220418387.jpg */,
-				4956A22C23E2EDC5007D472E /* diamond-head-honolulu-hawaii.jpg */,
-				4956A22D23E2EDC5007D472E /* honolulu.jpg */,
-				4956A22E23E2EDC5007D472E /* unnamed.png */,
-				4956A22F23E2EDC5007D472E /* diamond-head.jpg */,
+				4956A22523E2EDC5007D472E /* 1.jpg */,
+				4956A22623E2EDC5007D472E /* 2.jpg */,
+				4956A22723E2EDC5007D472E /* 3.jpg */,
+				4956A22823E2EDC5007D472E /* 4.jpg */,
+				4956A22923E2EDC5007D472E /* 5.jpg */,
+				4956A22A23E2EDC5007D472E /* 6.jpg */,
+				4956A22B23E2EDC5007D472E /* 7.jpg */,
+				4956A22C23E2EDC5007D472E /* 8.jpg */,
+				4956A22D23E2EDC5007D472E /* 9.jpg */,
+				4956A22E23E2EDC5007D472E /* 9.png */,
+				4956A22F23E2EDC5007D472E /* 11.jpg */,
 			);
 			path = "New Folder With Items";
 			sourceTree = "<group>";
@@ -128,6 +130,7 @@
 				4956A21C23E19F22007D472E /* ArtWorkTableTableViewController.swift */,
 				4956A21E23E1B85F007D472E /* ArtWorkTableViewCell.swift */,
 				4956A22023E2C8AA007D472E /* DetailsViewController.swift */,
+				4956A24023E32FE6007D472E /* AboutViewController.swift */,
 			);
 			path = "Honolulu City";
 			sourceTree = "<group>";
@@ -198,20 +201,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4956A23923E2EDC5007D472E /* unnamed.png in Resources */,
+				4956A23923E2EDC5007D472E /* 9.png in Resources */,
 				49E01F2823E17A050089E62D /* LaunchScreen.storyboard in Resources */,
-				4956A23023E2EDC5007D472E /* 881-hawaii-round-trip-honolulu-PRIDE_AMER7HNLOGGITOKOANWKHNL_R_0.jpg in Resources */,
-				4956A23823E2EDC5007D472E /* honolulu.jpg in Resources */,
-				4956A23523E2EDC5007D472E /* Oahu Honolulu View from Tantalus lookout.jpg in Resources */,
+				4956A23023E2EDC5007D472E /* 1.jpg in Resources */,
+				4956A23823E2EDC5007D472E /* 9.jpg in Resources */,
+				4956A23523E2EDC5007D472E /* 6.jpg in Resources */,
 				49E01F2523E17A050089E62D /* Assets.xcassets in Resources */,
-				4956A23323E2EDC5007D472E /* AliiBeachfrontBoutique_546x601.jpg in Resources */,
-				4956A23123E2EDC5007D472E /* waikiki_surf-statue.jpg in Resources */,
-				4956A23423E2EDC5007D472E /* Unknown.jpg in Resources */,
+				4956A23323E2EDC5007D472E /* 4.jpg in Resources */,
+				4956A23123E2EDC5007D472E /* 2.jpg in Resources */,
+				4956A23423E2EDC5007D472E /* 5.jpg in Resources */,
 				49E01F2023E179FC0089E62D /* Main.storyboard in Resources */,
-				4956A23623E2EDC5007D472E /* 220418387.jpg in Resources */,
-				4956A23A23E2EDC5007D472E /* diamond-head.jpg in Resources */,
-				4956A23723E2EDC5007D472E /* diamond-head-honolulu-hawaii.jpg in Resources */,
-				4956A23223E2EDC5007D472E /* 23Hours-Honolulu2-mobileMasterAt3x.jpg in Resources */,
+				4956A23623E2EDC5007D472E /* 7.jpg in Resources */,
+				4956A23A23E2EDC5007D472E /* 11.jpg in Resources */,
+				4956A23723E2EDC5007D472E /* 8.jpg in Resources */,
+				4956A23223E2EDC5007D472E /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +233,7 @@
 				49E01F1D23E179FC0089E62D /* ViewController.swift in Sources */,
 				49E01F1923E179FC0089E62D /* AppDelegate.swift in Sources */,
 				49E01F1B23E179FC0089E62D /* SceneDelegate.swift in Sources */,
+				4956A24123E32FE6007D472E /* AboutViewController.swift in Sources */,
 				4956A21D23E19F22007D472E /* ArtWorkTableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

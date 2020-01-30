@@ -10,7 +10,7 @@
         <!--About-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Honolulu_City" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AboutViewController" customModule="Honolulu_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-iU-I4z">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-iU-I4z">
                                 <rect key="frame" x="19" y="162" width="375" height="651"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="xYd-iY-P7h"/>
@@ -48,8 +48,8 @@
                     <tabBarItem key="tabBarItem" title="About" image="globe" catalog="system" id="6cr-eA-GFg"/>
                     <navigationItem key="navigationItem" id="yGy-a9-msr"/>
                     <connections>
-                        <outlet property="imageScrollView" destination="E4q-iU-I4z" id="I4q-hv-C8z"/>
-                        <outlet property="imgPageControl" destination="c3m-t2-KRr" id="BfT-z3-aIV"/>
+                        <outlet property="pageControl" destination="c3m-t2-KRr" id="pqG-yh-ZSP"/>
+                        <outlet property="scrollView" destination="E4q-iU-I4z" id="nsY-zc-ShD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
