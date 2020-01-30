@@ -9,21 +9,43 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate{
+class ViewController: UIViewController, MKMapViewDelegate, UIScrollViewDelegate{
+
+    @IBOutlet weak var imgPageControl: UIPageControl!
+    @IBOutlet weak var imageScrollView: UIScrollView!
     
-    
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var pageView: UIPageControl!
+    var images : [String] = [
+        "honolulu.jpg","Unknown.jpg","unnamed","diamond-head","waikiki_surf-statue"]
+    var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
     
     
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager.init()
     var artworks = [POI]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        imageScrollView.showsHorizontalScrollIndicator = false
+        imageScrollView.isPagingEnabled = true
+        
+        for index in 0..<images.count {
+            frame.origin.x = imageScrollView.frame.size.width * CGFloat(index)
+            frame.size = imageScrollView.frame.size
+            
+            let imageView = UIImageView(frame: frame)
+            imageView.image = UIImage(named: images[index])
+            self.imageScrollView.addSubview(imageView)
+        }
+        imageScrollView.contentSize = CGSize(width: imageScrollView.frame.size.width * CGFloat(images.count), height: imageScrollView.frame.size.height)
+        imageScrollView.delegate = self
+        
     }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        var page = scrollView.contentOffset.x/imageScrollView.frame.size.width
+        imgPageControl.currentPage = Int(page)
+    }
+    
     
     func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
         artworks = DAO.sharedInstance.getAllArtWorks()
@@ -48,6 +70,7 @@ class ViewController: UIViewController, MKMapViewDelegate{
                 let customView = MKPinAnnotationView.init(annotation: poi, reuseIdentifier: "pin")
                 
                 customView.canShowCallout = true
+                customView.layer.shadowColor = nil
                 let btn = UIButton(type: .detailDisclosure)
                 customView.rightCalloutAccessoryView = btn
                 
@@ -75,4 +98,3 @@ class ViewController: UIViewController, MKMapViewDelegate{
     }
     
 }
-
