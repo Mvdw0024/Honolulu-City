@@ -22,12 +22,19 @@ class ArtWorkTableTableViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         artsummary = DAO.sharedInstance.getAllArtWorks()
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! ArtWorkTableViewCell
+        let index = tabView.indexPath(for: cell)!
+        let art = artsummary[index.item]
         
+        let destination = segue.destination as! DetailsViewController
         
+        destination.artwork = art
         
     }
 }
-
 extension ArtWorkTableTableViewController: UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         
@@ -51,6 +58,6 @@ extension ArtWorkTableTableViewController: UITableViewDataSource{
         
         return curCell
         
-    
     }
 }
+

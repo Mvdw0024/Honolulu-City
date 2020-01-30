@@ -12,11 +12,14 @@ import MapKit
 class ViewController: UIViewController, MKMapViewDelegate{
     
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageView: UIPageControl!
+    
+    
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager.init()
     var artworks = [POI]()
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,5 +33,46 @@ class ViewController: UIViewController, MKMapViewDelegate{
         mapView.region = visRegion
         mapView.addAnnotations(artworks)
     }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if let poi = annotation as? POI{
+            
+            if let customView = mapView.dequeueReusableAnnotationView(withIdentifier: "pin"){
+                
+                customView.annotation = poi
+                return customView
+                
+            }else{
+                
+                let customView = MKPinAnnotationView.init(annotation: poi, reuseIdentifier: "pin")
+                
+                customView.canShowCallout = true
+                let btn = UIButton(type: .detailDisclosure)
+                customView.rightCalloutAccessoryView = btn
+                
+                return customView
+            }
+            
+        }
+        return nil
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if control == view.rightCalloutAccessoryView {
+            performSegue(withIdentifier: "mapDetailsSegue", sender: view)
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mapDetailsSegue"{
+            if let destination = segue.destination as? DetailsViewController {
+                destination.artwork = ((sender as! MKAnnotationView).annotation as! POI)
+            }
+        }
+        
+    }
+    
 }
 
