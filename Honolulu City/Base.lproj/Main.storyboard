@@ -16,10 +16,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLP-Jo-Ls1">
-                                <rect key="frame" x="-20" y="36" width="454" height="431"/>
+                                <rect key="frame" x="0.0" y="53" width="405" height="431"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-iU-I4z">
-                                        <rect key="frame" x="20" y="0.0" width="414" height="431"/>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-t2-KRr">
+                                        <rect key="frame" x="40" y="197" width="374" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="pageIndicatorTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="currentPageIndicatorTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-iU-I4z">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="contentLayoutGuide" id="xYd-iY-P7h"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="Bt0-yk-HOZ"/>
@@ -27,18 +34,11 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="leading" secondItem="bLP-Jo-Ls1" secondAttribute="leading" constant="20" id="C6W-UR-sry"/>
+                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="leading" secondItem="bLP-Jo-Ls1" secondAttribute="leading" id="C6W-UR-sry"/>
                                     <constraint firstItem="E4q-iU-I4z" firstAttribute="centerY" secondItem="bLP-Jo-Ls1" secondAttribute="centerY" id="Pb4-7G-6E9"/>
-                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="centerX" secondItem="bLP-Jo-Ls1" secondAttribute="centerX" id="nEt-nl-yik"/>
+                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="centerX" secondItem="bLP-Jo-Ls1" secondAttribute="centerX" constant="4.5" id="nEt-nl-yik"/>
                                 </constraints>
                             </view>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-t2-KRr">
-                                <rect key="frame" x="20" y="429" width="374" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="pageIndicatorTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="currentPageIndicatorTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </pageControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pf2-ks-Yxf">
                                 <rect key="frame" x="20" y="547" width="374" height="266"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,17 +65,17 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-40" id="6QI-Nx-6cu"/>
-                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="centerX" secondItem="J48-eF-eER" secondAttribute="centerX" id="9kQ-0r-Tqc"/>
+                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="centerX" secondItem="J48-eF-eER" secondAttribute="centerX" constant="-4.5" id="9kQ-0r-Tqc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pf2-ks-Yxf" secondAttribute="bottom" id="F4b-wj-aP1"/>
                             <constraint firstItem="pf2-ks-Yxf" firstAttribute="top" secondItem="J48-eF-eER" secondAttribute="bottom" constant="8" id="FJv-Ip-VGH"/>
-                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-8" id="Urv-OS-NbT"/>
+                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="9" id="Urv-OS-NbT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf2-ks-Yxf" secondAttribute="trailing" constant="20" id="XHB-wV-k2B"/>
                             <constraint firstItem="J48-eF-eER" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cMB-1i-2Sw"/>
-                            <constraint firstItem="J48-eF-eER" firstAttribute="top" secondItem="bLP-Jo-Ls1" secondAttribute="bottom" constant="8" id="ctX-rn-ISZ"/>
+                            <constraint firstItem="J48-eF-eER" firstAttribute="top" secondItem="bLP-Jo-Ls1" secondAttribute="bottom" constant="-9" id="ctX-rn-ISZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J48-eF-eER" secondAttribute="trailing" constant="20" id="d0H-JS-Kxf"/>
                             <constraint firstItem="pf2-ks-Yxf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lNu-KV-X9x"/>
-                            <constraint firstItem="J48-eF-eER" firstAttribute="top" secondItem="E4q-iU-I4z" secondAttribute="bottom" constant="8" id="wLS-K3-4vl"/>
+                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oZi-fn-BGX"/>
+                            <constraint firstItem="J48-eF-eER" firstAttribute="top" secondItem="E4q-iU-I4z" secondAttribute="bottom" constant="-9" id="wLS-K3-4vl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -166,7 +166,10 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4Y-4g-3bb">
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="us-hi-ho.gif" highlightedImage="us-hi-ho.gif" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFX-Eg-ugj">
+                                <rect key="frame" x="166" y="101" width="83" height="48"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4Y-4g-3bb">
                                 <rect key="frame" x="20" y="163" width="374" height="72"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="45"/>
                                 <nil key="textColor"/>
@@ -179,7 +182,7 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K00-99-xqM">
-                                <rect key="frame" x="319" y="115" width="36" height="21"/>
+                                <rect key="frame" x="354" y="115" width="36" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -210,14 +213,16 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
                             <constraint firstItem="l4Y-4g-3bb" firstAttribute="top" secondItem="K00-99-xqM" secondAttribute="bottom" constant="27" id="LuJ-T1-KH3"/>
                             <constraint firstItem="mHU-ZU-Ltp" firstAttribute="bottom" secondItem="kq5-lg-7hh" secondAttribute="bottom" id="Mk6-VT-B64"/>
                             <constraint firstItem="l4Y-4g-3bb" firstAttribute="top" secondItem="mHU-ZU-Ltp" secondAttribute="top" constant="75" id="QH5-Hf-OUO"/>
+                            <constraint firstItem="l4Y-4g-3bb" firstAttribute="top" secondItem="mFX-Eg-ugj" secondAttribute="bottom" constant="14" id="S0v-Yk-89m"/>
                             <constraint firstItem="mHU-ZU-Ltp" firstAttribute="trailing" secondItem="l4Y-4g-3bb" secondAttribute="trailing" constant="20" id="X5x-P4-Vwx"/>
                             <constraint firstItem="K00-99-xqM" firstAttribute="top" secondItem="mHU-ZU-Ltp" secondAttribute="top" constant="27" id="Xrt-Ry-gL3"/>
+                            <constraint firstItem="mFX-Eg-ugj" firstAttribute="top" secondItem="mHU-ZU-Ltp" secondAttribute="top" constant="13" id="Ze3-WS-5vL"/>
                             <constraint firstItem="mHU-ZU-Ltp" firstAttribute="trailing" secondItem="kq5-lg-7hh" secondAttribute="trailing" constant="20" id="akr-e3-nic"/>
                             <constraint firstItem="l4Y-4g-3bb" firstAttribute="leading" secondItem="mHU-ZU-Ltp" secondAttribute="leading" constant="20" id="jaH-C1-1Db"/>
                             <constraint firstItem="Vfh-dr-Dub" firstAttribute="top" secondItem="mHU-ZU-Ltp" secondAttribute="top" constant="27" id="oqc-xO-oo5"/>
                             <constraint firstItem="l4Y-4g-3bb" firstAttribute="top" secondItem="Vfh-dr-Dub" secondAttribute="bottom" constant="27" id="vzd-Oo-Obp"/>
                             <constraint firstItem="mHU-ZU-Ltp" firstAttribute="trailing" secondItem="ZrU-qz-EYR" secondAttribute="trailing" constant="20" id="xHC-v4-5vF"/>
-                            <constraint firstItem="K00-99-xqM" firstAttribute="leading" secondItem="Vfh-dr-Dub" secondAttribute="trailing" constant="225" id="zgX-mc-RaG"/>
+                            <constraint firstItem="K00-99-xqM" firstAttribute="leading" secondItem="Vfh-dr-Dub" secondAttribute="trailing" constant="260" id="zgX-mc-RaG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mHU-ZU-Ltp"/>
                     </view>
@@ -232,7 +237,7 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqh-AM-2Hc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3533" y="159"/>
+            <point key="canvasLocation" x="3531.884057971015" y="158.70535714285714"/>
         </scene>
         <!--Map-->
         <scene sceneID="x5M-I9-VF5">
@@ -310,6 +315,7 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
         <image name="archivebox" catalog="system" width="64" height="52"/>
         <image name="globe" catalog="system" width="64" height="60"/>
         <image name="map.fill" catalog="system" width="64" height="56"/>
+        <image name="us-hi-ho.gif" width="324" height="216"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Wfc-of-StF"/>
