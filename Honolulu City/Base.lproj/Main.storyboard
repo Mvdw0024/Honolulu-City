@@ -15,33 +15,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visit Honolulu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7b-73-Jn8">
-                                <rect key="frame" x="20" y="93" width="374" height="41"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-iU-I4z">
-                                <rect key="frame" x="19" y="162" width="375" height="651"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="xYd-iY-P7h"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Bt0-yk-HOZ"/>
-                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLP-Jo-Ls1">
+                                <rect key="frame" x="-20" y="36" width="454" height="431"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-iU-I4z">
+                                        <rect key="frame" x="20" y="0.0" width="414" height="431"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="xYd-iY-P7h"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="Bt0-yk-HOZ"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="leading" secondItem="bLP-Jo-Ls1" secondAttribute="leading" constant="20" id="C6W-UR-sry"/>
+                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="centerY" secondItem="bLP-Jo-Ls1" secondAttribute="centerY" id="Pb4-7G-6E9"/>
+                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="centerX" secondItem="bLP-Jo-Ls1" secondAttribute="centerX" id="nEt-nl-yik"/>
+                                </constraints>
+                            </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-t2-KRr">
                                 <rect key="frame" x="20" y="429" width="374" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="pageIndicatorTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pf2-ks-Yxf">
+                                <rect key="frame" x="20" y="547" width="374" height="266"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="266" id="8MK-BU-giS"/>
+                                </constraints>
+                                <mutableString key="text">Honolulu (/ˌhɒnəˈluːluː/;[6] Hawaiian: [honoˈlulu]) is the capital and largest city of the U.S. state of Hawaii. It is an unincorporated part of and the county seat of the City and County of Honolulu along the southeast coast of the island of Oʻahu.[a] The city is the main gateway to Hawaiʻi and a major portal into the United States. The city is also a major hub for international business and military defense, as well as being host to a diverse variety of east-west and Pacific cultures, cuisine, and traditions.
+
+Honolulu is the remotest city of its size in the world,[8] and is the westernmost and southernmost major U.S. city. For statistical purposes, the United States Census Bureau recognizes the approximate area commonly referred to as "City of Honolulu" (not to be confused with the "City and County") as a census county division (CCD).[9] Honolulu is a major financial center of the islands and of the Pacific Ocean. The population of the Honolulu census designated place (CDP) was 359,870 as of the 2017 population estimate,[4] while the Honolulu CCD was 390,738[10] and the population of the consolidated city and county was 953,207.
+
+Honolulu means "sheltered harbor"[11] or "calm port" in Hawaiian.[12] The old name is Kou, a district roughly encompassing the area from Nuʻuanu Avenue to Alakea Street and from Hotel Street to Queen Street which is the heart of the present downtown district.[13] The city has been the capital of the Hawaiian Islands since 1845 and gained historical recognition following the attack on Pearl Harbor by Japan near the city on December 7, 1941.
+
+As of 2015, Honolulu was ranked high on world livability rankings, and was also ranked as the 2nd safest city in the U.S.[14][15] It is also the most populated Oceanian city outside Australasia and ranks second to Auckland as the most-populous city in Polynesia.[16][17]</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honolulu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J48-eF-eER">
+                                <rect key="frame" x="20" y="475" width="374" height="64"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="E4q-iU-I4z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="CMV-kK-FZ9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E4q-iU-I4z" secondAttribute="bottom" constant="135" id="CcD-ZW-2Uc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c7b-73-Jn8" secondAttribute="trailing" constant="20" id="Gxg-wc-Bwc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E4q-iU-I4z" secondAttribute="trailing" constant="20" id="RGc-MO-u0T"/>
-                            <constraint firstItem="E4q-iU-I4z" firstAttribute="top" secondItem="c7b-73-Jn8" secondAttribute="bottom" constant="43" id="Xei-90-XSD"/>
-                            <constraint firstItem="c7b-73-Jn8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="bUg-zf-CMR"/>
-                            <constraint firstItem="c7b-73-Jn8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tEl-dy-HmS"/>
+                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-40" id="6QI-Nx-6cu"/>
+                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="centerX" secondItem="J48-eF-eER" secondAttribute="centerX" id="9kQ-0r-Tqc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pf2-ks-Yxf" secondAttribute="bottom" id="F4b-wj-aP1"/>
+                            <constraint firstItem="pf2-ks-Yxf" firstAttribute="top" secondItem="J48-eF-eER" secondAttribute="bottom" constant="8" id="FJv-Ip-VGH"/>
+                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-8" id="Urv-OS-NbT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf2-ks-Yxf" secondAttribute="trailing" constant="20" id="XHB-wV-k2B"/>
+                            <constraint firstItem="J48-eF-eER" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cMB-1i-2Sw"/>
+                            <constraint firstItem="J48-eF-eER" firstAttribute="top" secondItem="bLP-Jo-Ls1" secondAttribute="bottom" constant="8" id="ctX-rn-ISZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J48-eF-eER" secondAttribute="trailing" constant="20" id="d0H-JS-Kxf"/>
+                            <constraint firstItem="pf2-ks-Yxf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lNu-KV-X9x"/>
+                            <constraint firstItem="J48-eF-eER" firstAttribute="top" secondItem="E4q-iU-I4z" secondAttribute="bottom" constant="8" id="wLS-K3-4vl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -64,15 +98,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Honolulu ArtWorks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hi-0A-CF3">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Honolulu ArtWorks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hi-0A-CF3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fE7-Cd-sVe">
-                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <rect key="frame" x="0.0" y="188" width="414" height="625"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -122,42 +156,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlB-0F-UXU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2593" y="969"/>
+            <point key="canvasLocation" x="2592.753623188406" y="968.97321428571422"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="ZXq-fj-ZGj">
             <objects>
                 <viewController id="ONM-7k-oav" customClass="DetailsViewController" customModule="Honolulu_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x3d-8j-fJw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4Y-4g-3bb">
-                                <rect key="frame" x="20" y="75" width="374" height="26.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <rect key="frame" x="20" y="163" width="374" height="72"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discipline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfh-dr-Dub">
-                                <rect key="frame" x="20" y="27" width="74" height="21"/>
+                                <rect key="frame" x="20" y="115" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K00-99-xqM">
-                                <rect key="frame" x="319" y="27" width="36" height="21"/>
+                                <rect key="frame" x="319" y="115" width="36" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrU-qz-EYR">
-                                <rect key="frame" x="20" y="109.5" width="374" height="21"/>
+                                <rect key="frame" x="20" y="243" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kq5-lg-7hh">
-                                <rect key="frame" x="20" y="152.5" width="374" height="655.5"/>
+                                <rect key="frame" x="20" y="286" width="374" height="527"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -278,6 +312,6 @@
         <image name="map.fill" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4nX-5P-7se"/>
+        <segue reference="Wfc-of-StF"/>
     </inferredMetricsTieBreakers>
 </document>

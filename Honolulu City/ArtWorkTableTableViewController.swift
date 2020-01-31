@@ -12,6 +12,7 @@ class ArtWorkTableTableViewController: UIViewController {
     
     
     @IBOutlet weak var tabView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var artsummary = [POI]()
     
@@ -23,7 +24,7 @@ class ArtWorkTableTableViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         artsummary = DAO.sharedInstance.getAllArtWorks()
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! ArtWorkTableViewCell
         let index = tabView.indexPath(for: cell)!
@@ -35,6 +36,7 @@ class ArtWorkTableTableViewController: UIViewController {
         
     }
 }
+
 extension ArtWorkTableTableViewController: UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         

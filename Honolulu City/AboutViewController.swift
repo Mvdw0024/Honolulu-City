@@ -19,6 +19,7 @@ class AboutViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        pageControl.numberOfPages = images.count
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.isPagingEnabled = true
         
@@ -35,8 +36,8 @@ class AboutViewController: UIViewController, UIScrollViewDelegate {
         
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let page = scrollView.contentOffset.x/scrollView.frame.size.width
-        pageControl.currentPage = Int(page)
+        let pageNumb = scrollView.contentOffset.x/scrollView.frame.size.width
+        pageControl.currentPage = Int(pageNumb)
     }
     
 }
