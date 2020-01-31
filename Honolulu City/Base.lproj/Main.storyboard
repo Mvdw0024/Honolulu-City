@@ -15,22 +15,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLP-Jo-Ls1">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="bLP-Jo-Ls1">
                                 <rect key="frame" x="0.0" y="53" width="405" height="431"/>
                                 <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-t2-KRr">
-                                        <rect key="frame" x="40" y="197" width="374" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="pageIndicatorTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="currentPageIndicatorTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </pageControl>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-iU-I4z">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="contentLayoutGuide" id="xYd-iY-P7h"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="Bt0-yk-HOZ"/>
                                     </scrollView>
+                                    <pageControl contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-t2-KRr">
+                                        <rect key="frame" x="15" y="197" width="374" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="pageIndicatorTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="currentPageIndicatorTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -111,21 +111,21 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="tNj-mb-UmC" detailTextLabel="cMM-w0-5Ya" style="IBUITableViewCellStyleSubtitle" id="4iR-Vr-W5y" customClass="ArtWorkTableViewCell" customModule="Honolulu_City" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="56"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4iR-Vr-W5y" id="yw9-9a-fF2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tNj-mb-UmC">
-                                                    <rect key="frame" x="20" y="9" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="11" width="27" height="27.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cMM-w0-5Ya">
-                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="20" y="41.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -166,9 +166,6 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="us-hi-ho.gif" highlightedImage="us-hi-ho.gif" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFX-Eg-ugj">
-                                <rect key="frame" x="166" y="101" width="83" height="48"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4Y-4g-3bb">
                                 <rect key="frame" x="20" y="163" width="374" height="72"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="45"/>
@@ -213,10 +210,8 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
                             <constraint firstItem="l4Y-4g-3bb" firstAttribute="top" secondItem="K00-99-xqM" secondAttribute="bottom" constant="27" id="LuJ-T1-KH3"/>
                             <constraint firstItem="mHU-ZU-Ltp" firstAttribute="bottom" secondItem="kq5-lg-7hh" secondAttribute="bottom" id="Mk6-VT-B64"/>
                             <constraint firstItem="l4Y-4g-3bb" firstAttribute="top" secondItem="mHU-ZU-Ltp" secondAttribute="top" constant="75" id="QH5-Hf-OUO"/>
-                            <constraint firstItem="l4Y-4g-3bb" firstAttribute="top" secondItem="mFX-Eg-ugj" secondAttribute="bottom" constant="14" id="S0v-Yk-89m"/>
                             <constraint firstItem="mHU-ZU-Ltp" firstAttribute="trailing" secondItem="l4Y-4g-3bb" secondAttribute="trailing" constant="20" id="X5x-P4-Vwx"/>
                             <constraint firstItem="K00-99-xqM" firstAttribute="top" secondItem="mHU-ZU-Ltp" secondAttribute="top" constant="27" id="Xrt-Ry-gL3"/>
-                            <constraint firstItem="mFX-Eg-ugj" firstAttribute="top" secondItem="mHU-ZU-Ltp" secondAttribute="top" constant="13" id="Ze3-WS-5vL"/>
                             <constraint firstItem="mHU-ZU-Ltp" firstAttribute="trailing" secondItem="kq5-lg-7hh" secondAttribute="trailing" constant="20" id="akr-e3-nic"/>
                             <constraint firstItem="l4Y-4g-3bb" firstAttribute="leading" secondItem="mHU-ZU-Ltp" secondAttribute="leading" constant="20" id="jaH-C1-1Db"/>
                             <constraint firstItem="Vfh-dr-Dub" firstAttribute="top" secondItem="mHU-ZU-Ltp" secondAttribute="top" constant="27" id="oqc-xO-oo5"/>
@@ -315,7 +310,6 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
         <image name="archivebox" catalog="system" width="64" height="52"/>
         <image name="globe" catalog="system" width="64" height="60"/>
         <image name="map.fill" catalog="system" width="64" height="56"/>
-        <image name="us-hi-ho.gif" width="324" height="216"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Wfc-of-StF"/>

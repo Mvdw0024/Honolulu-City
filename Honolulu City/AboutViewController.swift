@@ -11,14 +11,13 @@ import UIKit
 class AboutViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
-    var images: [String] = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","9.png","11.jpg",]
+    var images: [String] = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","9.png","11.jpg"]
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+  
         pageControl.numberOfPages = images.count
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.isPagingEnabled = true
