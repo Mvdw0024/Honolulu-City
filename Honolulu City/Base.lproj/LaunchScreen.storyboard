@@ -15,12 +15,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="us-hi-ho.gif" highlightedImage="us-hi-ho.gif" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMn-UW-gV1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="us-hi-ho.jpeg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMn-UW-gV1">
+                                <rect key="frame" x="20" y="340" width="374" height="216"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Honolulu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DG9-Xd-rM3">
+                                <rect key="frame" x="20" y="70" width="374" height="199"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7k-Rx-UPb">
+                                <rect key="frame" x="20" y="606" width="374" height="80"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lMn-UW-gV1" secondAttribute="trailing" constant="20" id="FDs-NN-3Lh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h7k-Rx-UPb" secondAttribute="bottom" constant="218" id="H1k-AW-pwg"/>
+                            <constraint firstItem="DG9-Xd-rM3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="Kje-um-4xl"/>
+                            <constraint firstItem="lMn-UW-gV1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TSQ-Ih-usG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DG9-Xd-rM3" secondAttribute="trailing" constant="20" id="Wfg-9v-1cs"/>
+                            <constraint firstItem="h7k-Rx-UPb" firstAttribute="top" secondItem="lMn-UW-gV1" secondAttribute="bottom" constant="8" id="XMJ-9v-7M9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h7k-Rx-UPb" secondAttribute="trailing" constant="20" id="d8K-mr-p5Q"/>
+                            <constraint firstItem="h7k-Rx-UPb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fEf-JN-Ucm"/>
+                            <constraint firstItem="DG9-Xd-rM3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g6e-Gb-yTT"/>
+                            <constraint firstItem="lMn-UW-gV1" firstAttribute="top" secondItem="DG9-Xd-rM3" secondAttribute="bottom" constant="190" id="kAv-Iz-IRr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -30,6 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="us-hi-ho.gif" width="324" height="216"/>
+        <image name="us-hi-ho.jpeg" width="324" height="216"/>
     </resources>
 </document>
