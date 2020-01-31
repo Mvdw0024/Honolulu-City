@@ -81,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				4956A21C23E19F22007D472E /* ArtWorkTableTableViewController.swift */,
+				49E01F1C23E179FC0089E62D /* ViewController.swift */,
 				4956A21E23E1B85F007D472E /* ArtWorkTableViewCell.swift */,
 				4956A22023E2C8AA007D472E /* DetailsViewController.swift */,
 				4956A24023E32FE6007D472E /* AboutViewController.swift */,
@@ -141,7 +142,6 @@
 				490D27F223E45E8F00880F46 /* Controllers */,
 				49E01F1823E179FC0089E62D /* AppDelegate.swift */,
 				49E01F1A23E179FC0089E62D /* SceneDelegate.swift */,
-				49E01F1C23E179FC0089E62D /* ViewController.swift */,
 				49E01F1E23E179FC0089E62D /* Main.storyboard */,
 				49E01F2423E17A050089E62D /* Assets.xcassets */,
 				49E01F2623E17A050089E62D /* LaunchScreen.storyboard */,

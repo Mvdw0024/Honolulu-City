@@ -16,35 +16,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="bLP-Jo-Ls1">
-                                <rect key="frame" x="0.0" y="53" width="405" height="431"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="350"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-iU-I4z">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" verticalCompressionResistancePriority="350" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-iU-I4z">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="contentLayoutGuide" id="xYd-iY-P7h"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="Bt0-yk-HOZ"/>
                                     </scrollView>
-                                    <pageControl contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-t2-KRr">
-                                        <rect key="frame" x="15" y="197" width="374" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-t2-KRr">
+                                        <rect key="frame" x="187.5" y="300" width="39" height="37"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="pageIndicatorTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="currentPageIndicatorTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="leading" secondItem="bLP-Jo-Ls1" secondAttribute="leading" id="C6W-UR-sry"/>
-                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="centerY" secondItem="bLP-Jo-Ls1" secondAttribute="centerY" id="Pb4-7G-6E9"/>
-                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="centerX" secondItem="bLP-Jo-Ls1" secondAttribute="centerX" constant="4.5" id="nEt-nl-yik"/>
+                                    <constraint firstAttribute="trailing" secondItem="E4q-iU-I4z" secondAttribute="trailing" id="780-58-AAH"/>
+                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="top" secondItem="bLP-Jo-Ls1" secondAttribute="top" id="8Yg-At-4Vv"/>
+                                    <constraint firstAttribute="height" constant="350" id="CXb-uX-aaU"/>
+                                    <constraint firstItem="c3m-t2-KRr" firstAttribute="centerX" secondItem="bLP-Jo-Ls1" secondAttribute="centerX" id="Ges-lV-gVf"/>
+                                    <constraint firstItem="c3m-t2-KRr" firstAttribute="top" secondItem="E4q-iU-I4z" secondAttribute="bottom" constant="-50" id="bj6-NL-MRD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="e7a-Zi-SPQ"/>
+                                    <constraint firstItem="E4q-iU-I4z" firstAttribute="leading" secondItem="bLP-Jo-Ls1" secondAttribute="leading" id="nj8-tC-FS2"/>
+                                    <constraint firstAttribute="bottom" secondItem="E4q-iU-I4z" secondAttribute="bottom" id="oUy-wJ-0Nv"/>
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pf2-ks-Yxf">
-                                <rect key="frame" x="20" y="547" width="374" height="266"/>
+                                <rect key="frame" x="20" y="497" width="374" height="316"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="266" id="8MK-BU-giS"/>
-                                </constraints>
                                 <string key="text">Honolulu (/ˌhɒnəˈluːluː/;[6] Hawaiian: [honoˈlulu]) is the capital and largest city of the U.S. state of Hawaii. It is an unincorporated part of and the county seat of the City and County of Honolulu along the southeast coast of the island of Oʻahu.[a] The city is the main gateway to Hawaiʻi and a major portal into the United States. The city is also a major hub for international business and military defense, as well as being host to a diverse variety of east-west and Pacific cultures, cuisine, and traditions.
 
 Honolulu is the remotest city of its size in the world,[8] and is the westernmost and southernmost major U.S. city. For statistical purposes, the United States Census Bureau recognizes the approximate area commonly referred to as "City of Honolulu" (not to be confused with the "City and County") as a census county division (CCD).[9] Honolulu is a major financial center of the islands and of the Pacific Ocean. The population of the Honolulu census designated place (CDP) was 359,870 as of the 2017 population estimate,[4] while the Honolulu CCD was 390,738[10] and the population of the consolidated city and county was 953,207.
@@ -57,25 +58,24 @@ As of 2015, Honolulu was ranked high on world livability rankings, and was also 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honolulu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J48-eF-eER">
-                                <rect key="frame" x="20" y="475" width="374" height="64"/>
+                                <rect key="frame" x="20" y="425" width="374" height="64"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="centerX" secondItem="J48-eF-eER" secondAttribute="centerX" constant="-4.5" id="9kQ-0r-Tqc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pf2-ks-Yxf" secondAttribute="bottom" id="F4b-wj-aP1"/>
-                            <constraint firstItem="pf2-ks-Yxf" firstAttribute="top" secondItem="J48-eF-eER" secondAttribute="bottom" constant="8" id="FJv-Ip-VGH"/>
-                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="9" id="Urv-OS-NbT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf2-ks-Yxf" secondAttribute="trailing" constant="20" id="XHB-wV-k2B"/>
-                            <constraint firstItem="J48-eF-eER" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cMB-1i-2Sw"/>
-                            <constraint firstItem="J48-eF-eER" firstAttribute="top" secondItem="bLP-Jo-Ls1" secondAttribute="bottom" constant="-9" id="ctX-rn-ISZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J48-eF-eER" secondAttribute="trailing" constant="20" id="d0H-JS-Kxf"/>
-                            <constraint firstItem="pf2-ks-Yxf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lNu-KV-X9x"/>
-                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oZi-fn-BGX"/>
-                            <constraint firstItem="J48-eF-eER" firstAttribute="top" secondItem="E4q-iU-I4z" secondAttribute="bottom" constant="-9" id="wLS-K3-4vl"/>
+                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D20-P7-g3g"/>
+                            <constraint firstItem="pf2-ks-Yxf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ki0-kF-rjU"/>
+                            <constraint firstItem="bLP-Jo-Ls1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nop-ee-LPy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J48-eF-eER" secondAttribute="trailing" constant="20" id="R2B-mQ-GHj"/>
+                            <constraint firstItem="J48-eF-eER" firstAttribute="top" secondItem="c3m-t2-KRr" secondAttribute="bottom" constant="44" id="a2t-ql-Q65"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf2-ks-Yxf" secondAttribute="trailing" constant="20" id="dnP-iG-rKf"/>
+                            <constraint firstItem="pf2-ks-Yxf" firstAttribute="top" secondItem="J48-eF-eER" secondAttribute="bottom" constant="8" id="dzG-Xs-R3v"/>
+                            <constraint firstItem="J48-eF-eER" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="foq-a9-fqQ"/>
+                            <constraint firstAttribute="trailing" secondItem="bLP-Jo-Ls1" secondAttribute="trailing" id="i6q-i6-ygD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pf2-ks-Yxf" secondAttribute="bottom" id="iOO-xW-ZIG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
